@@ -202,3 +202,4 @@ Received Import Request.
 Start importing Assets/Scenes/Puzzle1.unity using Guid(636c839a3624d644bb561e0b2f32ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8371913db86ddafab75d0e5cd426b919') in 0.012962 seconds 
   Import took 0.015826 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
