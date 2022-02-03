@@ -1,26 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GreyBoxInteraction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isButton;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool _isnotloaded = true;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.gameObject.layer == 7)
+        if (other.gameObject.layer == 7)
         {
-            var puzzle = collision.gameObject.GetComponent<Puzzle>();
+            isButton = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.layer == 7)
+        {
+            isButton = false;
+        }
+    }
+
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name != "Puzzle1")
+        {
+            _isnotloaded = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && isButton && _isnotloaded)
+        {
+            var puzzle = GameObject.Find("Button").gameObject.GetComponent<Puzzle>();
+            puzzle.RunPuzzle();
+            _isnotloaded = false;
         }
     }
 }
