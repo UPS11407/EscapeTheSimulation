@@ -2059,8 +2059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7e5f222f4687c47a7ffc1076347d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: 
-  _wall: {fileID: 0}
+  _sceneName: Puzzle1
+  _wallName: Puzzle1wall
   _isSolved: 0
 --- !u!1 &1495933571
 GameObject:
