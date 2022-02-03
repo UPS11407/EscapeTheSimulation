@@ -37,3 +37,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Logs/AssetImportWorker0-prev.log
+Logs/AssetImportWorker0-prev.log
+Logs/shadercompiler-UnityShaderCompiler.exe0.log

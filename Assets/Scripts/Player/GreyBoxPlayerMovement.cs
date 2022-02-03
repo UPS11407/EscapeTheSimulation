@@ -56,6 +56,10 @@ public class GreyBoxPlayerMovement : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-
+    
+	public Vector3 GetPlayerPos()
+	{
+		return _rigid.position;
+	}
 
 }

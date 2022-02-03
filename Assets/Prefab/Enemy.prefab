@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3701740019406785708}
   - component: {fileID: 3701740019406785709}
   - component: {fileID: 3701740019406785711}
+  - component: {fileID: 8313525592867463067}
   - component: {fileID: 3701740019406785710}
   m_Layer: 6
   m_Name: Enemy
@@ -151,6 +152,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 2
   _delay: 2.5
+--- !u!114 &8313525592867463067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447207226204752565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6703e3b57f46c234d941bd32624dec2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 2
 --- !u!50 &3701740019406785710
 Rigidbody2D:
   serializedVersion: 4
