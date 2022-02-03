@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3739af6bdc0e724b897f228c93448e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
   shootDelay: 0.75
   bulletPrefab: {fileID: 5024094602566347928, guid: 15fa2500c3375ae48bc5e590f7f99011, type: 3}
 --- !u!1 &1853434737
@@ -2087,5 +2087,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Puzzle1
-  _wall: {fileID: 248388286}
+  _wallName: 
   _isSolved: 0

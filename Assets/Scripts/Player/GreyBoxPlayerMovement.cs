@@ -25,28 +25,40 @@ public class GreyBoxPlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         Vector2 movementDir = new Vector2(0f, 0f);
+		byte inputs = 0;
 
         if (Input.GetKey(KeyCode.W))
         {
             movementDir += new Vector2(0f, 1f);
+			inputs++;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             movementDir += new Vector2(0f, -1f);
-        }
+			inputs++;
+		}
 
         if (Input.GetKey(KeyCode.A))
         {
             movementDir += new Vector2(-1f, 0f);
-        }
+			inputs++;
+		}
 
         if (Input.GetKey(KeyCode.D))
         {
             movementDir += new Vector2(1f, 0f);
-        }
+			inputs++;
+		}
 
-        _rigid.velocity = movementDir * _speed;
+		if (inputs == 2)
+		{
+			_rigid.velocity = (movementDir * _speed)/1.5f;
+		}
+		else
+		{
+			_rigid.velocity = movementDir * _speed;
+		}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
