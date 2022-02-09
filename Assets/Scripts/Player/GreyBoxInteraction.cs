@@ -9,10 +9,14 @@ public class GreyBoxInteraction : MonoBehaviour
 
     public bool _isnotloaded = true;
 
+    GameObject _button;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == 7)
         {
+            Debug.Log(other.gameObject.name);
+            _button = other.gameObject;
             isButton = true;
         }
     }
@@ -21,20 +25,21 @@ public class GreyBoxInteraction : MonoBehaviour
     {
         if (other.gameObject.layer == 7)
         {
+            _button = this.gameObject;
             isButton = false;
         }
     }
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name != "Puzzle1")
+        if(SceneManager.GetActiveScene().name == "Greybox")
         {
-            _isnotloaded = true;
+            _isnotloaded = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && isButton && _isnotloaded)
+        if (Input.GetKeyDown(KeyCode.E) && isButton && !_isnotloaded)
         {
-            var puzzle = GameObject.Find("Button").gameObject.GetComponent<Puzzle>();
+            var puzzle = _button.GetComponent<Puzzle>();
             puzzle.RunPuzzle();
             _isnotloaded = false;
         }

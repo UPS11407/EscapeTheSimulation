@@ -7,8 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Greybox.unity
+    guid: 771f899cd23c7af4a94608219e3c7948
   - enabled: 1
     path: Assets/Scenes/Puzzle1.unity
     guid: 636c839a3624d644bb561e0b2f32ab74
+  - enabled: 1
+    path: Assets/Scenes/Puzzle2.unity
+    guid: 8dfdde5e893cfcc4fb3446d38aeb286e
   m_configObjects: {}
