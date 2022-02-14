@@ -14,13 +14,14 @@ public class Puzzle : MonoBehaviour
     public void RunPuzzle()
     {
         SceneManager.LoadScene(_sceneName, LoadSceneMode.Additive);
+        Time.timeScale = 0;
     }
 
     public void SolvePuzzle()
     {
         if (_isSolved)
         {
-            //Debug.Log(_sceneName);
+            Time.timeScale = 1;
 
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(_sceneName));
 

@@ -15,7 +15,6 @@ public class GreyBoxInteraction : MonoBehaviour
     {
         if (other.gameObject.layer == 7)
         {
-            Debug.Log(other.gameObject.name);
             _button = other.gameObject;
             isButton = true;
         }
@@ -25,7 +24,7 @@ public class GreyBoxInteraction : MonoBehaviour
     {
         if (other.gameObject.layer == 7)
         {
-            _button = this.gameObject;
+            _button = null;
             isButton = false;
         }
     }
@@ -39,9 +38,18 @@ public class GreyBoxInteraction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && isButton && !_isnotloaded)
         {
-            var puzzle = _button.GetComponent<Puzzle>();
-            puzzle.RunPuzzle();
-            _isnotloaded = false;
+            if(_button.TryGetComponent(out Puzzle puzzleComp) != true)
+            {
+                var puzzle3 = _button.GetComponent<Puzzle3>();
+                puzzle3.setButton(puzzle3.val);
+                puzzle3.checkButtons();
+            }
+            else
+            {
+                var puzzle = _button.GetComponent<Puzzle>();
+                puzzle.RunPuzzle();
+                _isnotloaded = false;
+            }
         }
     }
 }
