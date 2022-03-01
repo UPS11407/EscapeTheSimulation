@@ -65,7 +65,7 @@ public class GreyBoxPlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "Powerup")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
     }
     
