@@ -30,7 +30,7 @@ public class Summoner : EnemyBase
 
     private void Summon()
     {
-        if (canSummon() && transform.GetChildCount() < maxSummons)
+        if (canSummon() && transform.childCount < maxSummons)
         {
             Instantiate(summonEnemyType, transform.position, transform.rotation, transform);
 
@@ -44,6 +44,7 @@ public class Summoner : EnemyBase
         if (GetAlertStatus())
         {
             Summon();
+            FleePlayer();
         }
         
     }
