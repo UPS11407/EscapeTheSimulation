@@ -8,7 +8,7 @@ public class BossDoor : MonoBehaviour
 
     [SerializeField] private GameObject _wall;
 
-    private int val;
+    private int val = 0;
 
     void Update()
     {

@@ -160,4 +160,17 @@ public class EnemyBase : MonoBehaviour
         Destroy(bullet, 5);
 
     }
+
+    public void TakeDamage(int _damage)
+    {
+        _currentHP -= _damage;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 8)
+        {
+            TakeDamage(1);
+        }
+    }
 }
