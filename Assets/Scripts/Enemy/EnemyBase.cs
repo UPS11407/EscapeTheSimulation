@@ -6,7 +6,7 @@ public class EnemyBase : MonoBehaviour
 {
     Rigidbody2D _rigibody;
     public float _maxHP = 1.0f;
-    float _currentHP;
+    internal float _currentHP;
 
     //The player object
     public GameObject player;
@@ -54,7 +54,7 @@ public class EnemyBase : MonoBehaviour
     }
 
     //destroy enemy if dead
-    public void CheckIfDead()
+    public virtual void CheckIfDead()
     {
         if (_currentHP <= 0)
         {
