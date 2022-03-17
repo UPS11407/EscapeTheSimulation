@@ -175,8 +175,8 @@ MonoBehaviour:
   _movementSpeed: 2
   _damageValue: 0.25
   alertStatus: 0
-  alertRange: 12
+  alertRange: 14
   bulletPrefab: {fileID: 3865587001147644485, guid: abd6bbb7032e2ac45b9a7e7a6f203ac2, type: 3}
   bulletSpeed: 2.25
   rateOfFire: 0.5
-  maxRange: 12
+  maxRange: 9

@@ -32,7 +32,7 @@ public class Summoner : EnemyBase
     {
         if (canSummon() && transform.childCount < maxSummons)
         {
-            Instantiate(summonEnemyType, transform.position, transform.rotation, transform);
+            Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y - 2, transform.position.z), transform.rotation, transform);
 
             
         }
@@ -41,9 +41,10 @@ public class Summoner : EnemyBase
     private void Update()
     {
         EnemyUpdate();
+        Summon();
+
         if (GetAlertStatus())
         {
-            Summon();
             FleePlayer();
         }
         

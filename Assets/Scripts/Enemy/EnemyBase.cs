@@ -66,7 +66,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (GetPlayerDistance() < maxRange)
         {
-            Debug.Log("TRUE");
+            //Debug.Log("TRUE");
             return true;
         }
         else 
@@ -153,7 +153,7 @@ public class EnemyBase : MonoBehaviour
 
     public void Shoot()
     {
-        Debug.Log(transform.rotation);
+        //Debug.Log(transform.rotation);
 
         var bullet = Instantiate(bulletPrefab, transform.position, transform.rotation * Quaternion.Euler(0,0,90));
         bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
