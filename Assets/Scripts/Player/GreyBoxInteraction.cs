@@ -31,7 +31,7 @@ public class GreyBoxInteraction : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Greybox")
+        if(SceneManager.GetActiveScene().name == "Level1")
         {
             _isnotloaded = false;
         }
