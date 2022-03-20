@@ -36,7 +36,7 @@ public class EnemyBase : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _rigibody = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
