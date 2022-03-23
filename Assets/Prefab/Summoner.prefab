@@ -175,11 +175,11 @@ MonoBehaviour:
   _movementSpeed: 1.25
   _damageValue: 0.25
   alertStatus: 0
-  alertRange: 10
+  alertRange: 8
   bulletPrefab: {fileID: 0}
   bulletSpeed: 0
   rateOfFire: 0
-  maxRange: 10
+  maxRange: 8
   summonEnemyType: {fileID: 7494695521490796163, guid: 6aa3e4e434173e3458547e431a4e2fc6, type: 3}
   summonRate: 6
   maxSummons: 2

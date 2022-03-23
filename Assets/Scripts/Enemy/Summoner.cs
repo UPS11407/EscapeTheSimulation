@@ -7,9 +7,7 @@ public class Summoner : EnemyBase
     public GameObject summonEnemyType;
     public float summonRate;
     public float maxSummons;
-
-    public GameObject parentGameObject;
-
+    
     float summonDelay = 0;
     public bool canSummon()
     {
@@ -29,24 +27,12 @@ public class Summoner : EnemyBase
             return false;
         }
     }
-    public override void CheckIfDead()
-    {
-        if (_currentHP <= 0)
-        {
-            Destroy(gameObject);
-            if (parentGameObject != null)
-            {
-                Destroy(parentGameObject);
-            }
-        }
-        
-        
-    }
+
     private void Summon()
     {
-        if (canSummon() && parentGameObject.transform.childCount < maxSummons)
+        if (canSummon() && transform.childCount < maxSummons)
         {
-            Instantiate(summonEnemyType, parentGameObject.transform.position, parentGameObject.transform.rotation, parentGameObject.transform);
+            Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y - 2, transform.position.z), transform.rotation, transform);
 
             
         }
@@ -55,14 +41,11 @@ public class Summoner : EnemyBase
     private void Update()
     {
         EnemyUpdate();
+        Summon();
+
         if (GetAlertStatus())
         {
-            Summon();
-            rotateToDirection(GetPlayer().transform.position);
-            if (CanShoot())
-            {
-                Shoot();
-            }
+            FleePlayer();
         }
         
     }
