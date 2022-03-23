@@ -30,7 +30,7 @@ public class GreyBoxShooting : MonoBehaviour
 			bulletDir = bulletDir.normalized;
 			var bullet = Instantiate(bulletPrefab, _playerMovement.GetPlayerPos() + bulletDir * 0.75f, Quaternion.Euler(0, 0, 0));
 			float angle = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
-			bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
+			bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
 			bullet.GetComponent<Rigidbody2D>().velocity = new Vector2 (bulletDir.x, bulletDir.y).normalized * speed;
 
 			Destroy(bullet, 5);

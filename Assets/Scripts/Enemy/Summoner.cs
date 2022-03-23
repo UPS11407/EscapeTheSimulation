@@ -32,7 +32,8 @@ public class Summoner : EnemyBase
     {
         if (canSummon() && transform.childCount < maxSummons)
         {
-            Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y - 2, transform.position.z), transform.rotation, transform);
+            var newEnemy = Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation);
+            //newEnemy.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
 
             
         }
