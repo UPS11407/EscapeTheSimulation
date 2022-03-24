@@ -13,6 +13,8 @@ public class GreyBoxShooting : MonoBehaviour
 	[Tooltip("Bullet Prefab")]
 	[SerializeField] GameObject bulletPrefab;
 
+	public float _buff = 0.0f;
+
 	Vector3 mousePos;
 
 	GreyBoxPlayerMovement _playerMovement;

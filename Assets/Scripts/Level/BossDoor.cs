@@ -20,7 +20,7 @@ public class BossDoor : MonoBehaviour
 
         foreach(GameObject collectible in _collectibles)
         {
-            if(collectible.activeInHierarchy == true)
+            if(collectible.activeInHierarchy == false)
             {
                 val += 1;
             }

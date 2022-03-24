@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GreyBoxPlayerMovement : MonoBehaviour
 {
     [Tooltip("Speed of player movement (float)")]
-    [SerializeField] private float _speed;
+    public float _speed;
 
     private Rigidbody2D _rigid;
 
