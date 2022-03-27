@@ -130,7 +130,11 @@ public class EnemyBase : MonoBehaviour
     {
         return player;
     }
-    
+    public float GetHealth()
+    {
+        return _currentHP;
+    }
+
     public bool CanShoot()
     {
         if (bulletPrefab != null)

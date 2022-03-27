@@ -32,4 +32,9 @@ public class PlayerHealth : MonoBehaviour
     {
         _health -= _damage;
     }
+
+    public float GetHealth()
+    {
+        return _health;
+    }
 }

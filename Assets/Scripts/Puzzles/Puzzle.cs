@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class Puzzle : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Puzzle : MonoBehaviour
     {
         SceneManager.LoadScene(_sceneName, LoadSceneMode.Additive);
         Time.timeScale = 0;
+
+        EventSystem eventSystem = GameObject.Find("EventSystemL1").GetComponent<EventSystem>();
+        eventSystem.enabled = false;
     }
 
     public void SolvePuzzle()
