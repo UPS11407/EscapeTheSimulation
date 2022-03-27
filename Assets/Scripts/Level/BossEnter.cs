@@ -15,4 +15,9 @@ public class BossEnter : MonoBehaviour
        inBossRoom = true;
        healthBar.SetActive(true);
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Destroy(this.gameObject);
+    }
 }
