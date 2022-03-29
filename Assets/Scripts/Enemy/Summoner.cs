@@ -35,7 +35,7 @@ public class Summoner : EnemyBase
             var newEnemy = Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, transform);
             //var news = Instantiate()
             //newEnemy.transform.
-            newEnemy.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            newEnemy.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
 
             
         }
@@ -48,6 +48,7 @@ public class Summoner : EnemyBase
 
         if (GetAlertStatus())
         {
+            FacePlayer();
             FleePlayer();
         }
         

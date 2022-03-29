@@ -93,6 +93,18 @@ public class EnemyBase : MonoBehaviour
         gameObject.transform.right = player.transform.position - gameObject.transform.position;
     }
 
+    public void FacePlayer()
+    {
+        if(player.transform.position.x < gameObject.transform.position.x)
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+
     ///<summary> Moves towards player </summary>
     public void ChargePlayer()
     {
@@ -159,7 +171,9 @@ public class EnemyBase : MonoBehaviour
     {
         //Debug.Log(transform.rotation);
 
-        var bullet = Instantiate(bulletPrefab, transform.position, transform.rotation * Quaternion.Euler(0,0,90));
+        var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0,0,0));
+        bullet.GetComponent<Transform>().right = player.transform.position - gameObject.transform.position;
+        bullet.GetComponent<Transform>().rotation *= Quaternion.Euler(0, 0, -90);
         bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
         Destroy(bullet, 5);
 

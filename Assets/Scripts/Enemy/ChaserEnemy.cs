@@ -12,7 +12,20 @@ public class ChaserEnemy : EnemyBase
         {
             //rotates to face the player
             rotateToDirection(GetPlayer().transform.position);
+            transform.rotation = transform.rotation * Quaternion.Euler(0, 0, -90);
             ChargePlayer();
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 0)
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.layer == 8)
+        {
+            TakeDamage(1);
         }
     }
 }
