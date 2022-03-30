@@ -9,6 +9,7 @@ public class GreyBoxPlayerMovement : MonoBehaviour
     public float _speed;
 
     private Rigidbody2D _rigid;
+	public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +44,14 @@ public class GreyBoxPlayerMovement : MonoBehaviour
         {
             movementDir += new Vector2(-1f, 0f);
 			inputs++;
+			player.transform.rotation = Quaternion.Euler(0, 0, 0);
 		}
 
         if (Input.GetKey(KeyCode.D))
         {
             movementDir += new Vector2(1f, 0f);
 			inputs++;
+			player.transform.rotation = Quaternion.Euler(0, 180, 0);
 		}
 
 		if (inputs == 2)
