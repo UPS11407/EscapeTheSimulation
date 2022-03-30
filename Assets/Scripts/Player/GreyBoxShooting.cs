@@ -19,10 +19,12 @@ public class GreyBoxShooting : MonoBehaviour
 
 	Vector3 mousePos;
 
+	public GameObject player;
+
 	GreyBoxPlayerMovement _playerMovement;
 	void Start()
 	{
-		_playerMovement = GetComponent<GreyBoxPlayerMovement>();
+		_playerMovement = player.GetComponent<GreyBoxPlayerMovement>();
 	}
 
 	void Update()
