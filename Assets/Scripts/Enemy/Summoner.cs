@@ -7,6 +7,8 @@ public class Summoner : EnemyBase
     public GameObject summonEnemyType;
     public float summonRate;
     public float maxSummons;
+
+    public Transform _parent;
     
     float summonDelay = 0;
     public bool canSummon()
@@ -32,12 +34,8 @@ public class Summoner : EnemyBase
     {
         if (canSummon() && transform.childCount < maxSummons)
         {
-            var newEnemy = Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, transform);
-            //var news = Instantiate()
-            //newEnemy.transform.
-            newEnemy.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-
-            
+            var newEnemy = Instantiate(summonEnemyType, new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation, _parent);
+            newEnemy.transform.localScale = new Vector3(2f, 2f, 2f);        
         }
     }
 

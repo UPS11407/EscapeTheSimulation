@@ -42,7 +42,10 @@ public class GreyBoxInteraction : MonoBehaviour
             {
                 if(_button.TryGetComponent(out Puzzle3 puzzle3Comp) != true)
                 {
-                    _button.GetComponent<TutorialButton>().DestroyWall();
+                    if(_button.TryGetComponent(out TutorialButton TutButton) == true)
+                    {
+                        _button.GetComponent<TutorialButton>().DestroyWall();
+                    }
                 }
                 else
                 {
@@ -58,7 +61,10 @@ public class GreyBoxInteraction : MonoBehaviour
                 _isnotloaded = false;
             }
 
-            Destroy(_button);
+            if(_button.TryGetComponent(out ButtonTeleport _teleport) != true)
+            {
+                Destroy(_button);
+            }
         }
     }
 }
