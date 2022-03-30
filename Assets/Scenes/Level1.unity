@@ -64612,7 +64612,6 @@ GameObject:
   - component: {fileID: 1650683585}
   - component: {fileID: 1650683584}
   - component: {fileID: 1650683587}
-  - component: {fileID: 1650683588}
   - component: {fileID: 1650683589}
   - component: {fileID: 1650683586}
   - component: {fileID: 1650683591}
@@ -64772,23 +64771,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isnotloaded: 1
---- !u!114 &1650683588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650683581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3739af6bdc0e724b897f228c93448e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
-  shootDelay: 0.75
-  bulletPrefab: {fileID: 5024094602566347928, guid: 15fa2500c3375ae48bc5e590f7f99011, type: 3}
-  bulletSpawn: {fileID: 2096660894}
-  _buff: 0
 --- !u!114 &1650683589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65316,6 +65298,7 @@ GameObject:
   - component: {fileID: 1840021050}
   - component: {fileID: 1840021051}
   - component: {fileID: 1840021052}
+  - component: {fileID: 1840021053}
   m_Layer: 0
   m_Name: pistol
   m_TagString: Untagged
@@ -65402,6 +65385,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 1840021049}
+--- !u!114 &1840021053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840021049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3739af6bdc0e724b897f228c93448e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  shootDelay: 0.75
+  bulletPrefab: {fileID: 5024094602566347928, guid: 15fa2500c3375ae48bc5e590f7f99011, type: 3}
+  bulletSpawn: {fileID: 2096660894}
+  _buff: 0
+  player: {fileID: 1650683581}
 --- !u!1001 &1845013736
 PrefabInstance:
   m_ObjectHideFlags: 0
