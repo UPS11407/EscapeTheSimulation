@@ -37,7 +37,7 @@ public class Puzzle3 : MonoBehaviour
     {
         var puzzleComp = _controller.GetComponent<Puzzle3>();
         puzzleComp.SolvePuzzle();
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 
     public void SolvePuzzle()

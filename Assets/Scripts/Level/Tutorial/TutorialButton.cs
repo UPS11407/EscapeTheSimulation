@@ -9,6 +9,6 @@ public class TutorialButton : MonoBehaviour
     public void DestroyWall()
     {
         Destroy(_wall);
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 }
