@@ -16,5 +16,10 @@ public class EnemyBullets : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.layer == 12)
+        {
+            Destroy(gameObject);
+        }
     }
 }
