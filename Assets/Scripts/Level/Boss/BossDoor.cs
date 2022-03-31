@@ -4,31 +4,37 @@ using UnityEngine;
 
 public class BossDoor : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> _collectibles;
+    [SerializeField] private GameObject _collection;
 
     [SerializeField] private GameObject _wall;
 
-    private int val = 0;
+    private bool _open = false;
+    private int _val;
 
     void Update()
     {
-        checkForObjects();
+        if (!_open)
+        {
+            checkForObjects();
+        }
     }
 
     void checkForObjects()
     {
-
-        foreach(GameObject collectible in _collectibles)
+        _val = 0;
+        for(int i = 0; i< _collection.transform.childCount; i++)
         {
-            if(collectible.activeInHierarchy == false)
+            if(!_collection.transform.GetChild(i).gameObject.activeInHierarchy)
             {
-                val += 1;
+                _val++;
+                //Debug.Log(_val);
             }
+        }
 
-            if(val >= _collectibles.Count)
-            {
-                Destroy(_wall);
-            }
+        if(_val == _collection.transform.childCount)
+        {
+            _wall.SetActive(false);
+            _open = true;
         }
     }
 }
