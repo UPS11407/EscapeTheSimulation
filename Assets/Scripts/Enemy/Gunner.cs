@@ -11,7 +11,7 @@ public class Gunner : EnemyBase
         EnemyUpdate();
         if (GetAlertStatus())
         {
-            rotateToDirection(GetPlayer().transform.position);
+            FacePlayer();
             if (IsAtRange())
             {
                 StopMovement();
