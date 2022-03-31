@@ -38795,7 +38795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5642012044021194823, guid: c7ae3a5ea9416c04c996e173c2066547, type: 3}
+  m_Sprite: {fileID: 6716529456995943613, guid: a62a18bf17f583449b9a812dc6ddbb9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -64789,6 +64789,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5024094602566347928, guid: 15fa2500c3375ae48bc5e590f7f99011, type: 3}
   bulletSpawn: {fileID: 2096660894}
   _buff: 0
+  player: {fileID: 1650683581}
 --- !u!114 &1650683589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64933,7 +64934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4432793351920879750, guid: c7ae3a5ea9416c04c996e173c2066547, type: 3}
+  m_Sprite: {fileID: -358061076293111139, guid: a62a18bf17f583449b9a812dc6ddbb9e, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
