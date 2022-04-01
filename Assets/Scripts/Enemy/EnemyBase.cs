@@ -173,8 +173,8 @@ public class EnemyBase : MonoBehaviour
 
         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0,0,0));
         bullet.GetComponent<Transform>().right = player.transform.position - gameObject.transform.position;
+        bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
         bullet.GetComponent<Transform>().rotation *= Quaternion.Euler(0, 0, -90);
-        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
         Destroy(bullet, 5);
 
     }
