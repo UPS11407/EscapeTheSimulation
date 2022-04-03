@@ -1544,7 +1544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487508769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 915, y: -714, z: 0}
+  m_LocalPosition: {x: 1094, y: -714, z: 0}
   m_LocalScale: {x: 1.3329256, y: 1.3329256, z: 1.3329256}
   m_Children:
   - {fileID: 1447876861}
@@ -2337,7 +2337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 794, y: -337}
+  m_AnchoredPosition: {x: 815, y: -337}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &764707123
@@ -2616,7 +2616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 179, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805575082
@@ -3948,7 +3948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 179, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1431525509
@@ -6328,8 +6328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -690.0468, y: 260}
-  m_SizeDelta: {x: 121.6968, y: 129.174}
+  m_AnchoredPosition: {x: -607.8744, y: 182.6149}
+  m_SizeDelta: {x: 160.7271, y: 169.7501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067560765
 MonoBehaviour:
@@ -6367,8 +6367,11 @@ MonoBehaviour:
   m_Text: 'Connect the circles to each other by clicking on the squares
 
 
-    Once
-    you are done press the finish button!'
+    Each
+    color requires 7 squares
+
+
+    Once you are done press the finish button!'
 --- !u!222 &2067560766
 CanvasRenderer:
   m_ObjectHideFlags: 0

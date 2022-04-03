@@ -15,7 +15,7 @@ public class Gunner : EnemyBase
             if (IsAtRange())
             {
                 StopMovement();
-                if (CanShoot())
+                if (CanShoot() && player.GetComponent<GreyBoxShooting>().enabled)
                 {
                     Shoot();
                 }
