@@ -183,13 +183,8 @@ public class EnemyBase : MonoBehaviour
 
     public void ShootGrenade()
     {
-        //Debug.Log(transform.rotation);
-
         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, 0, 0));
         bullet.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize(player.transform.position - gameObject.transform.position) * _grenadeStrength, ForceMode2D.Impulse);
-        //bullet.GetComponent<Transform>().right = player.transform.position - gameObject.transform.position;
-        //bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
-        //bullet.GetComponent<Transform>().rotation *= Quaternion.Euler(0, 0, -90);
         Destroy(bullet, 5);
     }
 

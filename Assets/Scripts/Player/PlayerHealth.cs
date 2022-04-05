@@ -9,6 +9,12 @@ public class PlayerHealth : MonoBehaviour
     public float _health;
 
     private bool _dead;
+    public float _maxHealth;
+
+    private void Start()
+    {
+        _maxHealth = _health;
+    }
 
     void Update()
     {
