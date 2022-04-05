@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 87492248668999330}
   - component: {fileID: -8041522256735787979}
-  - component: {fileID: 7345121352742557189}
   - component: {fileID: 5835687647772901615}
+  - component: {fileID: 7840254889375564999}
   m_Layer: 9
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -55,22 +55,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &7345121352742557189
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3865587001147644485}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0013514757, y: -0.0063732862}
-  m_Size: {x: 0.29187244, y: 0.5532441}
-  m_Direction: 0
 --- !u!114 &5835687647772901615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +67,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb27d2cad2fad04e9a615522dc16c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &7840254889375564999
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865587001147644485}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.031104933, y: 0.24997191}
+      - {x: -0.031401563, y: 0.218761}
+      - {x: -0.062094606, y: 0.21840188}
+      - {x: -0.06261207, y: 0.18735424}
+      - {x: -0.093639694, y: 0.18738341}
+      - {x: -0.093742594, y: 0.093655445}
+      - {x: -0.1246831, y: 0.09362034}
+      - {x: -0.12507387, y: -0.24979238}
+      - {x: 0.1254142, y: -0.2499156}
+      - {x: 0.12496011, y: 0.09367923}
+      - {x: 0.094014935, y: 0.09376607}
+      - {x: 0.09386287, y: 0.18743363}
+      - {x: 0.06267616, y: 0.18762805}
+      - {x: 0.062411413, y: 0.2191851}
+      - {x: 0.031159675, y: 0.21877879}
+      - {x: 0.031179126, y: 0.25013077}
 --- !u!1 &5592127387175247828
 GameObject:
   m_ObjectHideFlags: 0

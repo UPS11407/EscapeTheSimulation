@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gunner : EnemyBase
 {
+    public bool _grenade;
     
     // Update is called once per frame
     void Update()
@@ -17,7 +18,15 @@ public class Gunner : EnemyBase
                 StopMovement();
                 if (CanShoot() && player.GetComponent<GreyBoxShooting>().enabled)
                 {
-                    Shoot();
+                    if (!_grenade)
+                    {
+                        Shoot();
+                    }
+                    else
+                    {
+                        ShootGrenade();
+                    }
+                    
                 }
             }
             else
