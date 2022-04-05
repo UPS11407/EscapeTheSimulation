@@ -21,6 +21,9 @@ public class EnemyBase : MonoBehaviour
     public bool alertStatus = false;
     public float alertRange;
 
+    [Tooltip("Only fill if grenade is used")] //grenade force strength
+    public float _grenadeStrength = 1.0f;
+
     [Tooltip("Only fill if ranged")]//bullet prefab
     public GameObject bulletPrefab;
 
@@ -176,7 +179,18 @@ public class EnemyBase : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
         bullet.GetComponent<Transform>().rotation *= Quaternion.Euler(0, 0, -90);
         Destroy(bullet, 5);
+    }
 
+    public void ShootGrenade()
+    {
+        //Debug.Log(transform.rotation);
+
+        var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, 0, 0));
+        bullet.GetComponent<Rigidbody2D>().AddForce(Vector3.Normalize(player.transform.position - gameObject.transform.position) * _grenadeStrength, ForceMode2D.Impulse);
+        //bullet.GetComponent<Transform>().right = player.transform.position - gameObject.transform.position;
+        //bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
+        //bullet.GetComponent<Transform>().rotation *= Quaternion.Euler(0, 0, -90);
+        Destroy(bullet, 5);
     }
 
     public void TakeDamage(int _damage)
