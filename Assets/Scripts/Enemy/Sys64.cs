@@ -23,7 +23,7 @@ public class Sys64 : EnemyBase
             if (IsAtRange())
             {
                 
-                if (CanShoot() && player.GetComponent<GreyBoxShooting>().enabled)
+                if (CanShoot() && player.GetComponent<Pistol>().enabled)
                 {
                     ShootGrenade();
                 }

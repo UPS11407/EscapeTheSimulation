@@ -190,7 +190,8 @@ public class EnemyBase : MonoBehaviour
 
     public void TakeDamage(int _damage)
     {
-        _currentHP -= _damage + player.GetComponentInChildren<GreyBoxShooting>()._buff; 
+		try { _currentHP -= _damage + player.GetComponentInChildren<Pistol>()._buff; }
+		catch { _currentHP -= _damage + player.GetComponentInChildren<Shotgun>()._buff; }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

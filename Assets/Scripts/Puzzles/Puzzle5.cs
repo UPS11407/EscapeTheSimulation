@@ -39,7 +39,7 @@ public class Puzzle5 : MonoBehaviour
         eventSystem.enabled = true;
         Time.timeScale = 1.0f;
 
-        GameObject.Find("Player").GetComponent<GreyBoxShooting>().enabled = true;
+        GameObject.Find("Player").GetComponent<Pistol>().enabled = true;
 
         Destroy(GameObject.Find(_door));
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("Puzzle5"));

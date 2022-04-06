@@ -20,7 +20,7 @@ public class Puzzle : MonoBehaviour
         EventSystem eventSystem = GameObject.Find("EventSystemL1").GetComponent<EventSystem>();
         eventSystem.enabled = false;
 
-        GameObject.Find("Player").GetComponent<GreyBoxShooting>().enabled = false;
+        GameObject.Find("Player").GetComponent<Pistol>().enabled = false;
     }
 
     public void SolvePuzzle()
@@ -28,7 +28,7 @@ public class Puzzle : MonoBehaviour
         if (_isSolved)
         {
             Time.timeScale = 1;
-            GameObject.Find("Player").GetComponent<GreyBoxShooting>().enabled = true;
+            GameObject.Find("Player").GetComponent<Pistol>().enabled = true;
 
             SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(_sceneName));
 

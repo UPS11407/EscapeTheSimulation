@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GreyBoxShooting : MonoBehaviour
+public class Shotgun : MonoBehaviour
 {
 	[Tooltip("Speed of bullet (float)")]
 	[SerializeField] float speed;
@@ -37,7 +37,7 @@ public class GreyBoxShooting : MonoBehaviour
 			var bullet = Instantiate(bulletPrefab, bulletSpawn.position + bulletDir * 0.75f, Quaternion.Euler(0, 0, 0));
 			float angle = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
 			bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
-			bullet.GetComponent<Rigidbody2D>().velocity = new Vector2 (bulletDir.x, bulletDir.y).normalized * speed;
+			bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletDir.x, bulletDir.y).normalized * speed;
 
 			Destroy(bullet, 5);
 		}
@@ -45,3 +45,4 @@ public class GreyBoxShooting : MonoBehaviour
 	}
 
 }
+

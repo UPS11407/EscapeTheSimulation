@@ -11,7 +11,7 @@ public class DmgUp : MonoBehaviour
     {
         if(collision.gameObject.layer == 0)
         {
-            collision.gameObject.GetComponent<GreyBoxShooting>()._buff += _buff;
+            collision.gameObject.GetComponent<Pistol>()._buff += _buff;
             Destroy(gameObject);
         }
     }
