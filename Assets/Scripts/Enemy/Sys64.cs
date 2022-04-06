@@ -19,7 +19,7 @@ public class Sys64 : EnemyBase
         EnemyUpdate();
         if (GetAlertStatus())
         {
-            rotateToDirection(GetPlayer().transform.position);
+            FacePlayer();
             if (IsAtRange())
             {
                 
@@ -39,9 +39,11 @@ public class Sys64 : EnemyBase
     {
         if(dashDelay <= Time.realtimeSinceStartup)
         {
+            Debug.Log("dash true");
             dashDelay = Time.realtimeSinceStartup + dashRate;
             return true;
-        } else
+        } 
+        else
         {
             return false;
         }

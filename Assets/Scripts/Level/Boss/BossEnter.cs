@@ -6,29 +6,26 @@ public class BossEnter : MonoBehaviour
 {
     public bool inBossRoom = false;
     public GameObject healthBar;
+    public GameObject bossDoor;
+
     private void Start()
     {
        healthBar.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player")
+        if (collision.name == "Player" && !inBossRoom)
         {
             inBossRoom = true;
             healthBar.SetActive(true);
+            StartCoroutine(CloseDoor());
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    IEnumerator CloseDoor()
     {
-        if (collision.name == "Player")
-        {
-            Destroy(this.gameObject);
-
-            if (healthBar == null)
-            {
-                Destroy(this.gameObject);
-            }
-        }
+        yield return new WaitForSeconds(0.1f);
+        bossDoor.GetComponent<BossDoor>().enabled = false;
+        bossDoor.SetActive(true);
     }
 }

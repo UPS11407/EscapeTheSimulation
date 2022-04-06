@@ -15,7 +15,6 @@ public class BossHealthBar : MonoBehaviour
 
     private void OnEnable()
     {
-        maxHealth = bossObj.GetComponent<Miniboss_Lvl1>()._currentHP;
         bossProperties = bossObj.GetComponent<EnemyBase>();
         _enterRoom = roomTrigger.GetComponent<BossEnter>();
     }
