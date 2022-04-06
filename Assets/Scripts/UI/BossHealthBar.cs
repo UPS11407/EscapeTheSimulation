@@ -11,7 +11,7 @@ public class BossHealthBar : MonoBehaviour
     EnemyBase bossProperties;
     BossEnter _enterRoom;
 
-    float maxHealth = 30;
+    public float maxHealth = 30;
 
     private void OnEnable()
     {

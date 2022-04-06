@@ -12,12 +12,23 @@ public class BossEnter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       inBossRoom = true;
-       healthBar.SetActive(true);
+        if (collision.name == "Player")
+        {
+            inBossRoom = true;
+            healthBar.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(this.gameObject);
+        if (collision.name == "Player")
+        {
+            Destroy(this.gameObject);
+
+            if (healthBar == null)
+            {
+                Destroy(this.gameObject);
+            }
+        }
     }
 }
