@@ -25,7 +25,6 @@ public class BossEnter : MonoBehaviour
     IEnumerator CloseDoor()
     {
         yield return new WaitForSeconds(0.1f);
-        bossDoor.GetComponent<BossDoor>().enabled = false;
         bossDoor.SetActive(true);
     }
 }
