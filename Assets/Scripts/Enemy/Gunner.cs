@@ -16,7 +16,7 @@ public class Gunner : EnemyBase
             if (IsAtRange())
             {
                 StopMovement();
-                if (CanShoot() && player.GetComponent<GreyBoxShooting>().enabled)
+                if (CanShoot() && player.GetComponentInChildren<GreyBoxShooting>().enabled)
                 {
                     if (!_grenade)
                     {
