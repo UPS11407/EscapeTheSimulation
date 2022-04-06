@@ -20,17 +20,19 @@ public class Puzzle : MonoBehaviour
         EventSystem eventSystem = GameObject.Find("EventSystemL1").GetComponent<EventSystem>();
         eventSystem.enabled = false;
 
-        GameObject.Find("Player").GetComponent<Pistol>().enabled = false;
-    }
+		GameObject.Find("pistol").SetActive(true);
+		GameObject.Find("Shotgun").SetActive(false);
+	}
 
     public void SolvePuzzle()
     {
         if (_isSolved)
         {
             Time.timeScale = 1;
-            GameObject.Find("Player").GetComponent<Pistol>().enabled = true;
+			GameObject.Find("pistol").SetActive(true);
+			GameObject.Find("Shotgun").SetActive(true);
 
-            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(_sceneName));
+			SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(_sceneName));
 
             Destroy(GameObject.Find(_wallName));
         }

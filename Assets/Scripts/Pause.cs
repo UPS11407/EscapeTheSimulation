@@ -23,8 +23,7 @@ public class Pause : MonoBehaviour
 
     private void PauseGame()
     {
-        GameObject.Find("Player").GetComponent<Pistol>().enabled = false;
-        GameObject.Find("pistol").GetComponent<GunPivot>().enabled = false;
+		GameObject.Find("pistol").SetActive(false);
 
         _pause = true;
 
@@ -41,7 +40,6 @@ public class Pause : MonoBehaviour
 
         Time.timeScale = 1.0f;
 
-        GameObject.Find("Player").GetComponent<Pistol>().enabled = true;
-        GameObject.Find("pistol").GetComponent<GunPivot>().enabled = true;
+        GameObject.Find("pistol").SetActive(true);
     }
 }
