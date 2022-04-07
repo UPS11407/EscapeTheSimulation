@@ -37,7 +37,6 @@ public class Shotgun : MonoBehaviour
 			Vector3 bulletDir = mousePos - _playerMovement.GetPlayerPos();
 			bulletDir = bulletDir.normalized;
 			float angle = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
-			Debug.Log(angle);
 
 			for (int i = 0; i < 7; i++)
 			{

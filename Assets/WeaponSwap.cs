@@ -6,7 +6,6 @@ public class WeaponSwap : MonoBehaviour
 {
 	float prevScrollDelta;
 	float currentScrollDelta;
-	public GameObject player;
 	public List<GameObject> weapons;
 	public byte activeWeapon = 0;
 
