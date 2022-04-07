@@ -11,6 +11,9 @@ public class PlayerHealth : MonoBehaviour
     private bool _dead;
     public float _maxHealth;
 
+    [SerializeField] float _immuneTime;
+    bool _isImmune = false;
+
     private void Start()
     {
         _maxHealth = _health;
@@ -36,11 +39,23 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        _health -= _damage;
+        if (!_isImmune)
+        {
+            StartCoroutine(Immunity());
+            _health -= _damage;
+        }
+        
     }
 
     public float GetHealth()
     {
         return _health;
+    }
+
+    IEnumerator Immunity()
+    {
+        _isImmune = true;
+        yield return new WaitForSeconds(_immuneTime);
+        _isImmune = false;
     }
 }
