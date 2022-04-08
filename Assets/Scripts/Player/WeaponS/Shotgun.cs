@@ -15,7 +15,7 @@ public class Shotgun : MonoBehaviour
 
 	public Transform bulletSpawn;
 
-	public float _buff = 0.0f;
+	public int _buff = 0;
 
 	public float _spreadAngle;
 
@@ -43,6 +43,7 @@ public class Shotgun : MonoBehaviour
 				var bullet = Instantiate(bulletPrefab, bulletSpawn.position + bulletDir * 0.75f, Quaternion.Euler(0, 0, angle - 60));
 
 				bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.up * speed;
+				bullet.GetComponent<PlayerBullet>()._damageVal += _buff;
 				Destroy(bullet, 5);
 				angle -= _spreadAngle;
 			}

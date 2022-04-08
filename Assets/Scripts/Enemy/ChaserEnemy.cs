@@ -23,9 +23,11 @@ public class ChaserEnemy : EnemyBase
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
             Destroy(gameObject);
         }
+
         if (collision.gameObject.layer == 8)
         {
-            TakeDamage(1);
+            Debug.Log(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
+            TakeDamage(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
         }
     }
 }

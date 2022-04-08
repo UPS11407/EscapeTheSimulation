@@ -14,6 +14,7 @@ public class Sys64 : EnemyBase
     {
         GetComponent<Rigidbody2D>().drag = 5;
     }
+
     private void Update()
     {
         EnemyUpdate();
@@ -22,8 +23,8 @@ public class Sys64 : EnemyBase
             FacePlayer();
             if (IsAtRange())
             {
-                
-                if (CanShoot() && player.GetComponent<Pistol>().enabled)
+
+                if (CanShoot() && PlayerActive())
                 {
                     ShootGrenade();
                 }

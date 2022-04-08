@@ -114,6 +114,25 @@ public class EnemyBase : MonoBehaviour
         _rigibody.velocity = GetPlayerDirection().normalized * _movementSpeed;
     }
 
+    public bool PlayerActive()
+    {
+        if (player.GetComponent<WeaponSwap>().activeWeapon == 0)
+        {
+            if (player.transform.GetChild(0).GetChild(0).gameObject.GetComponent<Pistol>().enabled)
+            {
+                return true;
+            }
+        }
+        else if (player.GetComponent<WeaponSwap>().activeWeapon == 1)
+        {
+            if (player.transform.GetChild(0).GetChild(1).gameObject.GetComponent<Shotgun>().enabled)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     //Reduce velocity to 0
     public void StopMovement()
     {
@@ -190,15 +209,15 @@ public class EnemyBase : MonoBehaviour
 
     public void TakeDamage(int _damage)
     {
-		try { _currentHP -= _damage + player.GetComponentInChildren<Pistol>()._buff; }
-		catch { _currentHP -= _damage + player.GetComponentInChildren<Shotgun>()._buff; }
+        _currentHP -= _damage;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.layer == 8)
         {
-            TakeDamage(1);
+            Debug.Log(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
+            TakeDamage(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
         }
     }
 }

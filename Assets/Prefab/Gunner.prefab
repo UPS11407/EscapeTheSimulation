@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef7c3e3d2628af4aa973573d8020a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHP: 3
+  _maxHP: 5
   player: {fileID: 0}
   _movementSpeed: 2
   _damageValue: 0.25
@@ -211,7 +211,7 @@ MonoBehaviour:
   alertRange: 14
   _grenadeStrength: 1
   bulletPrefab: {fileID: 3865587001147644485, guid: abd6bbb7032e2ac45b9a7e7a6f203ac2, type: 3}
-  bulletSpeed: 2.25
+  bulletSpeed: 5
   rateOfFire: 0.5
   maxRange: 9
   _grenade: 0

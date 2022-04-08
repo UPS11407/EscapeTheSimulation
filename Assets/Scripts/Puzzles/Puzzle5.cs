@@ -28,9 +28,12 @@ public class Puzzle5 : MonoBehaviour
     private int _greenVal;
     private int _yellowVal;
 
+    private GameObject _player;
+
     private void Start()
     {
         _image = GetComponent<Image>();
+        _player = GameObject.Find("Player");
     }
 
     private void SolvePuzzle()
@@ -39,7 +42,14 @@ public class Puzzle5 : MonoBehaviour
         eventSystem.enabled = true;
         Time.timeScale = 1.0f;
 
-        GameObject.Find("Player").GetComponent<Pistol>().enabled = true;
+        if (_player.GetComponent<WeaponSwap>().activeWeapon == 0)
+        {
+            _player.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+        }
+        else if (_player.GetComponent<WeaponSwap>().activeWeapon == 1)
+        {
+            _player.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
+        }
 
         Destroy(GameObject.Find(_door));
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("Puzzle5"));

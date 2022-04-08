@@ -12,6 +12,13 @@ public class Puzzle : MonoBehaviour
 
     public bool _isSolved = false;
 
+    private GameObject _player;
+
+    private void Start()
+    {
+        _player = GameObject.Find("Player");
+    }
+
     public void RunPuzzle()
     {
         SceneManager.LoadScene(_sceneName, LoadSceneMode.Additive);
@@ -20,22 +27,38 @@ public class Puzzle : MonoBehaviour
         EventSystem eventSystem = GameObject.Find("EventSystemL1").GetComponent<EventSystem>();
         eventSystem.enabled = false;
 
-		GameObject.Find("pistol").SetActive(true);
-		GameObject.Find("Shotgun").SetActive(false);
-	}
+        if (_player.GetComponent<WeaponSwap>().activeWeapon == 0)
+        {
+            _player.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+        }
+        else if (_player.GetComponent<WeaponSwap>().activeWeapon == 1)
+        {
+            _player.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
+        }
+    }
 
     public void SolvePuzzle()
     {
         if (_isSolved)
         {
             Time.timeScale = 1;
-			GameObject.Find("pistol").SetActive(true);
-			GameObject.Find("Shotgun").SetActive(true);
+            if (_player.GetComponent<WeaponSwap>().activeWeapon == 0)
+            {
+                _player.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+            }
+            else if (_player.GetComponent<WeaponSwap>().activeWeapon == 1)
+            {
+                _player.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+            }
 
 			SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName(_sceneName));
 
             Destroy(GameObject.Find(_wallName));
         }
+
+        EventSystem eventSystem = GameObject.Find("EventSystemL1").GetComponent<EventSystem>();
+        eventSystem.enabled = true;
+
         _isSolved = false;
     }
 }

@@ -15,7 +15,7 @@ public class Pistol : MonoBehaviour
 
 	public Transform bulletSpawn;
 
-	public float _buff = 0.0f;
+	public int _buff = 0;
 
 	Vector3 mousePos;
 
@@ -36,6 +36,7 @@ public class Pistol : MonoBehaviour
 			bulletDir = bulletDir.normalized;
 			var bullet = Instantiate(bulletPrefab, bulletSpawn.position + bulletDir * 0.75f, Quaternion.Euler(0, 0, 0));
 			float angle = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
+			bullet.GetComponent<PlayerBullet>()._damageVal += _buff;
 			bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
 			bullet.GetComponent<Rigidbody2D>().velocity = new Vector2 (bulletDir.x, bulletDir.y).normalized * speed;
 

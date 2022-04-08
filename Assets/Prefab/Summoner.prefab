@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b14b8d8feef4e44cb602bb0cc621767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHP: 3
+  _maxHP: 6
   player: {fileID: 0}
   _movementSpeed: 1.25
   _damageValue: 0.25

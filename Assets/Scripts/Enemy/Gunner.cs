@@ -16,39 +16,16 @@ public class Gunner : EnemyBase
 			if (IsAtRange())
 			{
 				StopMovement();
-				if (CanShoot()){
-
-					try
+				if (CanShoot() && PlayerActive()){
+					if (!_grenade)
 					{
-						if (player.GetComponentInChildren<Pistol>().enabled)
-						{
-							if (!_grenade)
-							{
-								Shoot();
-							}
-							else
-							{
-								ShootGrenade();
-							}
-						}
+						Shoot();
 					}
-
-					catch
+					else
 					{
-						if (player.GetComponentInChildren<Shotgun>().enabled)
-						{
-							if (!_grenade)
-							{
-								Shoot();
-							}
-							else
-							{
-								ShootGrenade();
-							}
-						}
+						ShootGrenade();
 					}
 				}
-
 			else
 				{
 					ChargePlayer();
