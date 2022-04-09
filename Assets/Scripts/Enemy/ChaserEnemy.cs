@@ -26,7 +26,7 @@ public class ChaserEnemy : EnemyBase
 
         if (collision.gameObject.layer == 8)
         {
-            Debug.Log(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
+            //Debug.Log(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
             TakeDamage(collision.gameObject.GetComponent<PlayerBullet>()._damageVal);
         }
     }

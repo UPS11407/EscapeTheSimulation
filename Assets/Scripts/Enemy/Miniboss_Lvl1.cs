@@ -28,6 +28,7 @@ public class Miniboss_Lvl1 : EnemyBase
         if(_currentHP <= 0)
         {
             _killed = true;
+            GameObject.Find("LevelComplete").GetComponent<AudioSource>().Play();
             _finishButton.SetActive(true);
         }
 

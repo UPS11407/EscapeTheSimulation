@@ -57,11 +57,24 @@ public class GreyBoxPlayerMovement : MonoBehaviour
 		if (inputs == 2)
 		{
 			_rigid.velocity = (movementDir * _speed)/1.5f;
-		}
-		else
+            if (!GameObject.Find("Walking").GetComponent<AudioSource>().isPlaying)
+            {
+                GameObject.Find("Walking").GetComponent<AudioSource>().Play();
+            }
+        }
+		else if(inputs == 1)
 		{
 			_rigid.velocity = movementDir * _speed;
-		}
+            if (!GameObject.Find("Walking").GetComponent<AudioSource>().isPlaying)
+            {
+                GameObject.Find("Walking").GetComponent<AudioSource>().Play();
+            }
+        }
+        else
+        {
+            _rigid.velocity = movementDir * _speed;
+            GameObject.Find("Walking").GetComponent<AudioSource>().Stop();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

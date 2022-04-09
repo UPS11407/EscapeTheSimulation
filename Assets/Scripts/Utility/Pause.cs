@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Audio;
 
 public class Pause : MonoBehaviour
 {
     public GameObject _pauseMenu;
+
+    public AudioClip _pauseSound;
 
     private bool _pause;
 
@@ -30,6 +33,10 @@ public class Pause : MonoBehaviour
 
     private void PauseGame()
     {
+        GetComponent<AudioSource>().clip = _pauseSound;
+        GetComponent<AudioSource>().volume = 0.2f;
+        GetComponent<AudioSource>().Play();
+
         if (_player.GetComponent<WeaponSwap>().activeWeapon == 0)
         {
             _player.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);

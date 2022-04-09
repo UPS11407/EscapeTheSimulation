@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyBase : MonoBehaviour
 {
     Rigidbody2D _rigibody;
@@ -61,6 +63,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (_currentHP <= 0)
         {
+            GameObject.Find("EnemyDeath").GetComponent<DeathSound>().PlaySound();
             Destroy(gameObject);
         }
     }
@@ -207,7 +210,7 @@ public class EnemyBase : MonoBehaviour
         Destroy(bullet, 5);
     }
 
-    public void TakeDamage(int _damage)
+    public void TakeDamage(float _damage)
     {
         _currentHP -= _damage;
     }

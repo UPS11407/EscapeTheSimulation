@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-	public int _damageVal;
+	public float _damageVal;
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{

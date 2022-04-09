@@ -41,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!_isImmune)
         {
+            GetComponent<AudioSource>().Play();
             StartCoroutine(Immunity());
             _health -= _damage;
         }

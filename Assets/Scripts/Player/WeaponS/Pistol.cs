@@ -15,7 +15,7 @@ public class Pistol : MonoBehaviour
 
 	public Transform bulletSpawn;
 
-	public int _buff = 0;
+	public float _buff = 0;
 
 	Vector3 mousePos;
 
@@ -39,6 +39,8 @@ public class Pistol : MonoBehaviour
 			bullet.GetComponent<PlayerBullet>()._damageVal += _buff;
 			bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
 			bullet.GetComponent<Rigidbody2D>().velocity = new Vector2 (bulletDir.x, bulletDir.y).normalized * speed;
+
+			GetComponent<AudioSource>().Play();
 
 			Destroy(bullet, 5);
 		}

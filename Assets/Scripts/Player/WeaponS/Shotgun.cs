@@ -15,7 +15,7 @@ public class Shotgun : MonoBehaviour
 
 	public Transform bulletSpawn;
 
-	public int _buff = 0;
+	public float _buff = 0;
 
 	public float _spreadAngle;
 
@@ -47,7 +47,9 @@ public class Shotgun : MonoBehaviour
 				Destroy(bullet, 5);
 				angle -= _spreadAngle;
 			}
-			
+
+			GetComponent<AudioSource>().Play();
+
 		}
 
 	}

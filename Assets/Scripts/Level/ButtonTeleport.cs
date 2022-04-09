@@ -35,14 +35,6 @@ public class ButtonTeleport : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && _touching)
         {
             Teleport(GameObject.Find("Player"), _point);
-            if(_lastLevel != null)
-            {
-                Destroy(_lastLevel, 3);
-            }
-            if(_active != null)
-            {
-                _active.SetActive(true);
-            }
         }
     }
 
