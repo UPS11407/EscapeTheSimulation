@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 716d9339249b8614088415e2dd88e708
+guid: 3cdc53ce5dd778e49aa2d4c828f9e702
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4385936086347592083
-    second: player down walk_0
+      213: 3398302651318936247
+    second: sys64  anim_0
   - first:
-      213: 3542458837983932191
-    second: player down walk_1
+      213: 3845332750831539881
+    second: sys64  anim_1
   - first:
-      213: 6669804429102212063
-    second: player down walk_2
+      213: -1150973854113614066
+    second: sys64  anim_2
   - first:
-      213: 8216891900737896419
-    second: player down walk_3
+      213: 7360829587475201027
+    second: sys64  anim_3
   - first:
-      213: 7940929965875052497
-    second: player down walk_4
+      213: -5723202770356411071
+    second: sys64  anim_4
   - first:
-      213: -7972997530560981422
-    second: player down walk_5
+      213: 6766071513364761086
+    second: sys64  anim_5
   - first:
-      213: -2779520313333294393
-    second: player down walk_6
+      213: 2930935467657627281
+    second: sys64  anim_6
   - first:
-      213: -8160526253068080374
-    second: player down walk_7
+      213: 1252411924982024117
+    second: sys64  anim_7
+  - first:
+      213: -6816668054027445147
+    second: sys64  anim_8
+  - first:
+      213: 5925240092904734163
+    second: sys64  anim_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player down walk_0
+      name: sys64  anim_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 65
+        width: 63
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,41 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391b05202a9fddc30800000000000000
-      internalID: 4385936086347592083
+      spriteID: 7b22223a142392f20800000000000000
+      internalID: 3398302651318936247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player down walk_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1fa97d5b87592130800000000000000
-      internalID: 3542458837983932191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player down walk_2
+      name: sys64  anim_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
-        width: 32
-        height: 32
+        y: 65
+        width: 63
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,41 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3e6f54ac7ef8c50800000000000000
-      internalID: 6669804429102212063
+      spriteID: 9a65d7073cd5d5530800000000000000
+      internalID: 3845332750831539881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player down walk_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ef344516a3480270800000000000000
-      internalID: 8216891900737896419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player down walk_4
+      name: sys64  anim_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 32
-        width: 32
-        height: 32
+        y: 65
+        width: 63
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +177,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dfbc3a2bb9d33e60800000000000000
-      internalID: 7940929965875052497
+      spriteID: e07bbc7b06be600f0800000000000000
+      internalID: -1150973854113614066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player down walk_5
+      name: sys64  anim_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 65
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cf4ada28be62660800000000000000
+      internalID: 7360829587475201027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sys64  anim_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145ef5737691390b0800000000000000
+      internalID: -5723202770356411071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sys64  anim_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 32
+        y: 1
+        width: 63
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,41 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25698db1df83a5190800000000000000
-      internalID: -7972997530560981422
+      spriteID: ef90ff6713ae5ed50800000000000000
+      internalID: 6766071513364761086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player down walk_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ca59c560092d69d0800000000000000
-      internalID: -2779520313333294393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player down walk_7
+      name: sys64  anim_6
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 32
-        height: 32
+        y: 1
+        width: 63
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,8 +261,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ba0a1fb9cffbe80800000000000000
-      internalID: -8160526253068080374
+      spriteID: 19683517746cca820800000000000000
+      internalID: 2930935467657627281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sys64  anim_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7440d9206716110800000000000000
+      internalID: 1252411924982024117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sys64  anim_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cd0f765845661a0800000000000000
+      internalID: -6816668054027445147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sys64  anim_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd3d72a87eaa3250800000000000000
+      internalID: 5925240092904734163
       vertices: []
       indices: 
       edges: []
