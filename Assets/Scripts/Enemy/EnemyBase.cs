@@ -99,7 +99,12 @@ public class EnemyBase : MonoBehaviour
         gameObject.transform.right = player.transform.position - gameObject.transform.position;
     }
 
-    public void FacePlayer()
+	public void rotateToDirectionVert(Vector2 point)
+	{
+		gameObject.transform.up = player.transform.position - gameObject.transform.position;
+	}
+
+	public void FacePlayer()
     {
         if(player.transform.position.x < gameObject.transform.position.x)
         {

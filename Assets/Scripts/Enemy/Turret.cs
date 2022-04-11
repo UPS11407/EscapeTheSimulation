@@ -9,8 +9,8 @@ public class Turret : EnemyBase
         EnemyUpdate();
         if (GetAlertStatus())
         {
-            rotateToDirection(GetPlayer().transform.position);
-            if (CanShoot() && PlayerActive())
+            rotateToDirectionVert(GetPlayer().transform.position);
+            if (CanShoot())
             {
                 Shoot();
             }

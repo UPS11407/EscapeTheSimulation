@@ -39,4 +39,20 @@ public class WeaponSwap : MonoBehaviour
 		}
 
 	}
+
+	public byte GetActiveWeapon()
+	{
+		return activeWeapon;
+	}
+
+	public void SetActiveWeapon()
+	{
+		weapons[0].SetActive(true);
+	}
+
+	public void DeselectWeapons()
+	{
+		weapons[0].SetActive(false);
+		weapons[1].SetActive(false);
+	}
 }
