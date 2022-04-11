@@ -29,7 +29,7 @@ public class Grenade : MonoBehaviour
             if (_inWall)
             {
                 Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GameObject.Find("Wall").GetComponent<Collider2D>());
-                Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GameObject.Find("Walls").GetComponent<Collider2D>());
+                Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GameObject.Find("WallLvl2").GetComponent<Collider2D>());
             }
 
             bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
