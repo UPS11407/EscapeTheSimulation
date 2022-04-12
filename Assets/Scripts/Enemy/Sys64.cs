@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Sys64 : EnemyBase
 {
@@ -17,6 +18,11 @@ public class Sys64 : EnemyBase
 
     private void Update()
     {
+        if(_currentHP <= 0)
+        {
+            SceneManager.LoadScene("GameWon");
+        }
+
         EnemyUpdate();
         if (GetAlertStatus())
         {
