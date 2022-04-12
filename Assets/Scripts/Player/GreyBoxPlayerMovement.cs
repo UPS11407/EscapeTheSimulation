@@ -10,10 +10,11 @@ public class GreyBoxPlayerMovement : MonoBehaviour
 
     private Rigidbody2D _rigid;
 	public GameObject player;
-
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         _rigid = GetComponent<Rigidbody2D>();
     }
 
@@ -32,27 +33,39 @@ public class GreyBoxPlayerMovement : MonoBehaviour
         {
             movementDir += new Vector2(0f, 1f);
 			inputs++;
+            anim.SetBool("walkingUp", true);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("walkingDown", false);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             movementDir += new Vector2(0f, -1f);
 			inputs++;
-		}
+            anim.SetBool("walkingUp", false);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("walkingDown", true);
+        }
 
         if (Input.GetKey(KeyCode.A))
         {
             movementDir += new Vector2(-1f, 0f);
 			inputs++;
 			player.transform.rotation = Quaternion.Euler(0, 0, 0);
-		}
+            anim.SetBool("walkingUp", false);
+            anim.SetBool("isWalking", true);
+            anim.SetBool("walkingDown", false);
+        }
 
         if (Input.GetKey(KeyCode.D))
         {
             movementDir += new Vector2(1f, 0f);
 			inputs++;
 			player.transform.rotation = Quaternion.Euler(0, 180, 0);
-		}
+            anim.SetBool("walkingUp", false);
+            anim.SetBool("isWalking", true);
+            anim.SetBool("walkingDown", false);
+        }
 
 		if (inputs == 2)
 		{
@@ -74,6 +87,9 @@ public class GreyBoxPlayerMovement : MonoBehaviour
         {
             _rigid.velocity = movementDir * _speed;
             GameObject.Find("Walking").GetComponent<AudioSource>().Stop();
+            anim.SetBool("walkingUp", false);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("walkingDown", false);
         }
     }
 
