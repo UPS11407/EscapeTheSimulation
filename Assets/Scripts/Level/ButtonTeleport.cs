@@ -11,7 +11,8 @@ public class ButtonTeleport : MonoBehaviour
 
     public GameObject _lastLevel;
     public GameObject _active;
-
+    public AudioSource _levelOneAudio;
+    public AudioSource _levelTwoAudio;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.layer == 0)
@@ -35,6 +36,8 @@ public class ButtonTeleport : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && _touching)
         {
             Teleport(GameObject.Find("Player"), _point);
+            _levelOneAudio.Stop();
+            _levelTwoAudio.Play();
         }
     }
 
