@@ -62410,6 +62410,7 @@ GameObject:
   - component: {fileID: 1069593291}
   - component: {fileID: 1069593296}
   - component: {fileID: 1069593297}
+  - component: {fileID: 1069593298}
   m_Layer: 6
   m_Name: BossEnemy
   m_TagString: Untagged
@@ -62689,6 +62690,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e5909244e0f9a4e9aa4c7754dcdca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1069593298
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069593290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afce5cacef03af84c9c0c50682cb9571, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1074993155
 PrefabInstance:
   m_ObjectHideFlags: 0
