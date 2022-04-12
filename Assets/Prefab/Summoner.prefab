@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHP: 6
+  deathPrefab: {fileID: 5021910713737498143, guid: 3111aaddbf7c06942900acd49c5a78b0, type: 3}
   player: {fileID: 0}
   _movementSpeed: 1.25
   _damageValue: 0.25

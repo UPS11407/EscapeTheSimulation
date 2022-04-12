@@ -10,6 +10,8 @@ public class EnemyBase : MonoBehaviour
     public float _maxHP = 1.0f;
     internal float _currentHP;
 
+    [SerializeField] GameObject deathPrefab;
+
     //The player object
     public GameObject player;
 
@@ -64,6 +66,9 @@ public class EnemyBase : MonoBehaviour
         if (_currentHP <= 0)
         {
             GameObject.Find("EnemyDeath").GetComponent<DeathSound>().PlaySound();
+            GameObject deathSprite = Instantiate(deathPrefab, transform.position, transform.rotation);
+            deathSprite.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+            Destroy(deathSprite, 1f);
             Destroy(gameObject);
         }
     }
