@@ -8,15 +8,12 @@ public class ButtonDefinition : MonoBehaviour
 {
     public bool _selected = false;
     private Button _button;
-   
 
     public AudioClip _swapToSFX;
     public AudioClip _confirmSFX;
     public float _confirmTime;
 
     private bool _disableControls = false;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -28,22 +25,16 @@ public class ButtonDefinition : MonoBehaviour
     {
         _selected = true;
 
-
         //if there's SFX for swapping button, play it
         if (_swapToSFX != null)
         {
             AudioSource.PlayClipAtPoint(_swapToSFX, Vector3.zero);
         }
-
-
-
-
     }
 
     public void SwappedOff()
     {
         _selected = false;
-
     }
 
     public void Clickbutton()

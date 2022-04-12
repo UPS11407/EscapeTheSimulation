@@ -93,7 +93,7 @@ public class MenuController : MonoBehaviour
             _backgroundAudio.Play();
 
         }
-        else if (!_activeMenuDefinition._continuePervMusic)
+        else if (!_activeMenuDefinition._continuePervMusic && _backgroundAudio != null)
         {
             _backgroundAudio.Stop();
         }
