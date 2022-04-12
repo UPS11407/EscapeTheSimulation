@@ -8,7 +8,9 @@ public class Pistol : MonoBehaviour
 	[SerializeField] float speed;
 
 	[Tooltip("Interval between each shot")]
-	[SerializeField] float shootDelay;
+	[SerializeField] float rateOfFire;
+
+	private float shootDelay = 0;
 
 	[Tooltip("Bullet Prefab")]
 	[SerializeField] GameObject bulletPrefab;
@@ -27,10 +29,30 @@ public class Pistol : MonoBehaviour
 		_playerMovement = player.GetComponent<GreyBoxPlayerMovement>();
 	}
 
+	private bool CanShoot()
+	{
+		if (bulletPrefab != null)
+		{
+			if (shootDelay < Time.realtimeSinceStartup)
+			{
+				shootDelay = Time.realtimeSinceStartup + rateOfFire;
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+
 	void Update()
 	{
 		mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		if (Input.GetMouseButtonDown(button: 0))
+		if (Input.GetMouseButtonDown(button: 0) && CanShoot())
 		{
 			Vector3 bulletDir = mousePos - _playerMovement.GetPlayerPos();
 			bulletDir = bulletDir.normalized;

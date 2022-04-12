@@ -62409,6 +62409,7 @@ GameObject:
   - component: {fileID: 1069593292}
   - component: {fileID: 1069593291}
   - component: {fileID: 1069593296}
+  - component: {fileID: 1069593297}
   m_Layer: 6
   m_Name: BossEnemy
   m_TagString: Untagged
@@ -62480,7 +62481,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -62676,6 +62677,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1069593297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069593290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e5909244e0f9a4e9aa4c7754dcdca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1074993155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64874,6 +64887,7 @@ GameObject:
   - component: {fileID: 1483474411}
   - component: {fileID: 1483474412}
   - component: {fileID: 1483474413}
+  - component: {fileID: 1483474414}
   m_Layer: 6
   m_Name: Sys64
   m_TagString: Untagged
@@ -65276,6 +65290,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1483474414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483474406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e5909244e0f9a4e9aa4c7754dcdca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1509676082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66070,7 +66096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 6
   _maxHealth: 0
-  _immuneTime: 0
+  _immuneTime: 0.75
 --- !u!82 &1650683590
 AudioSource:
   m_ObjectHideFlags: 0
@@ -74394,7 +74420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  shootDelay: 0.75
+  rateOfFire: 0.2
   bulletPrefab: {fileID: 5024094602566347928, guid: 15fa2500c3375ae48bc5e590f7f99011, type: 3}
   bulletSpawn: {fileID: 2096660894}
   _buff: 0
@@ -88272,7 +88298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  shootDelay: 0
+  rateOfFire: 0.75
   bulletPrefab: {fileID: 3297795313954480486, guid: 8453eb4682bd5474d94c1d2d42c81970, type: 3}
   bulletSpawn: {fileID: 1149623794}
   _buff: 0
