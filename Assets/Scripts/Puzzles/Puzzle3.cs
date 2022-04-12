@@ -19,6 +19,8 @@ public class Puzzle3 : MonoBehaviour
 
     public void setButton(int button)
     {
+        GameObject.Find("Puzzle3Doors").GetComponent<AudioSource>().Play();
+
         var puzzleComp = _controller.GetComponent<Puzzle3>();
         if (button == 1){
             puzzleComp._button1 = true;
@@ -37,7 +39,6 @@ public class Puzzle3 : MonoBehaviour
     {
         var puzzleComp = _controller.GetComponent<Puzzle3>();
         puzzleComp.SolvePuzzle();
-        //Destroy(this.gameObject);
     }
 
     public void SolvePuzzle()

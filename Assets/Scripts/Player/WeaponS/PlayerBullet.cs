@@ -8,8 +8,6 @@ public class PlayerBullet : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		//Debug.Log(_damageVal);
-
 		Destroy(gameObject, 0.01f);
 	}
 }
