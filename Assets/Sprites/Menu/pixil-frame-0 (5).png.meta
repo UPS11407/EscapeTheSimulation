@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 3de9b85c63be37c47be641d1c0638a71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4859176784998014753
+    second: pixil-frame-0 (5)_18
+  - first:
+      213: -2444647245261347630
+    second: pixil-frame-0 (5)_20
+  - first:
+      213: -4160104555628224231
+    second: pixil-frame-0 (5)_21
+  - first:
+      213: 5916975516466670658
+    second: pixil-frame-0 (5)_22
+  - first:
+      213: 4970484520681308569
+    second: pixil-frame-0 (5)_23
+  - first:
+      213: -1182493091520759929
+    second: pixil-frame-0 (5)_24
+  - first:
+      213: 6919634060670490554
+    second: pixil-frame-0 (5)_25
+  - first:
+      213: 2228604214948277506
+    second: pixil-frame-0 (5)_26
+  - first:
+      213: 3684887960310998202
+    second: pixil-frame-0 (5)_27
+  - first:
+      213: -1783845566381833780
+    second: pixil-frame-0 (5)_28
+  - first:
+      213: 4612475724380327585
+    second: pixil-frame-0 (5)_29
+  - first:
+      213: 5629469416053364558
+    second: pixil-frame-0 (5)_30
+  - first:
+      213: 3317133945226113770
+    second: pixil-frame-0 (5)_31
+  - first:
+      213: -3508825117235765115
+    second: pixil-frame-0 (5)_32
+  - first:
+      213: 323171820660566079
+    second: pixil-frame-0 (5)_33
+  - first:
+      213: -806039977137986039
+    second: pixil-frame-0 (5)_34
+  - first:
+      213: -6915694817611047942
+    second: pixil-frame-0 (5)_35
+  - first:
+      213: -1635959801196206148
+    second: pixil-frame-0 (5)_36
+  - first:
+      213: 6549923305946235945
+    second: pixil-frame-0 (5)_37
+  - first:
+      213: -4220038649433819248
+    second: pixil-frame-0 (5)_38
+  - first:
+      213: 8409397518863677882
+    second: pixil-frame-0 (5)_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixil-frame-0 (5)_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 158
+        width: 183
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f91aa7a834f6340800000000000000
+      internalID: 4859176784998014753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
