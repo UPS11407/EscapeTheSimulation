@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141981004}
-  - component: {fileID: 141981003}
   m_Layer: 5
   m_Name: Mainmenu
   m_TagString: Untagged
@@ -140,23 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &141981003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141981002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b21891062346f84ba8bac02d64a4350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _menuType: 0
-  _menuMusic: {fileID: 0}
-  _continuePervMusic: 0
-  _menuButtonObject:
-  - {fileID: 2009848695}
 --- !u!224 &141981004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -948,7 +930,6 @@ GameObject:
   - component: {fileID: 1819741827}
   - component: {fileID: 1819741826}
   - component: {fileID: 1819741825}
-  - component: {fileID: 1819741824}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -956,23 +937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1819741824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819741823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac49019de0e533e41978c95c6b899a1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeMenu: {fileID: 141981002}
-  _backgroundAudio: {fileID: 0}
-  _increaseHoris: 
-  _decreaseHoris: 
-  _confirmButtons: 
 --- !u!114 &1819741825
 MonoBehaviour:
   m_ObjectHideFlags: 0
