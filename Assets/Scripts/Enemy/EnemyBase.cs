@@ -66,9 +66,12 @@ public class EnemyBase : MonoBehaviour
         if (_currentHP <= 0)
         {
             GameObject.Find("EnemyDeath").GetComponent<DeathSound>().PlaySound();
-            GameObject deathSprite = Instantiate(deathPrefab, transform.position, transform.rotation);
-            deathSprite.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
-            Destroy(deathSprite, 1f);
+            if (deathPrefab != null)
+            {
+                GameObject deathSprite = Instantiate(deathPrefab, transform.position, transform.rotation);
+                deathSprite.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+                Destroy(deathSprite, 1f);
+            }
             Destroy(gameObject);
         }
     }

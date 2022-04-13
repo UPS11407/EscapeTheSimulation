@@ -40042,6 +40042,10 @@ PrefabInstance:
       propertyPath: _maxHP
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7777589140762747197, guid: c1c71301dad6ff940a3a25456048be6d, type: 3}
+      propertyPath: deathPrefab
+      value: 
+      objectReference: {fileID: 2695406179779078887, guid: 9cbddfe8eeab3044ca710059296d221f, type: 3}
     - target: {fileID: 8264841143397043025, guid: c1c71301dad6ff940a3a25456048be6d, type: 3}
       propertyPath: m_RootOrder
       value: 0
