@@ -2587,7 +2587,6 @@ GameObject:
   - component: {fileID: 779534430}
   - component: {fileID: 779534429}
   - component: {fileID: 779534428}
-  - component: {fileID: 779534427}
   m_Layer: 0
   m_Name: Image (2)
   m_TagString: Untagged
@@ -2614,23 +2613,6 @@ RectTransform:
   m_AnchoredPosition: {x: -732, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &779534427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779534425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &779534428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,19 +2656,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 779534429}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 779534427}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &779534429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3155,7 +3125,6 @@ GameObject:
   - component: {fileID: 903995133}
   - component: {fileID: 903995132}
   - component: {fileID: 903995131}
-  - component: {fileID: 903995130}
   m_Layer: 0
   m_Name: Image (2)
   m_TagString: Untagged
@@ -3182,23 +3151,6 @@ RectTransform:
   m_AnchoredPosition: {x: -732, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &903995130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903995128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &903995131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3242,19 +3194,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903995132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 903995130}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &903995132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4236,7 +4176,6 @@ GameObject:
   - component: {fileID: 1431525514}
   - component: {fileID: 1431525513}
   - component: {fileID: 1431525512}
-  - component: {fileID: 1431525511}
   m_Layer: 0
   m_Name: Image (5)
   m_TagString: Untagged
@@ -4263,23 +4202,6 @@ RectTransform:
   m_AnchoredPosition: {x: -556, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1431525511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431525509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &1431525512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4323,19 +4245,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1431525513}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1431525511}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1431525513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4872,7 +4782,6 @@ GameObject:
   - component: {fileID: 1657103888}
   - component: {fileID: 1657103887}
   - component: {fileID: 1657103886}
-  - component: {fileID: 1657103885}
   m_Layer: 0
   m_Name: Image (6)
   m_TagString: Untagged
@@ -4899,23 +4808,6 @@ RectTransform:
   m_AnchoredPosition: {x: -468, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1657103885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657103883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &1657103886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4959,19 +4851,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1657103887}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1657103885}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1657103887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5472,7 +5352,6 @@ GameObject:
   - component: {fileID: 1777116968}
   - component: {fileID: 1777116967}
   - component: {fileID: 1777116966}
-  - component: {fileID: 1777116965}
   m_Layer: 0
   m_Name: Image (6)
   m_TagString: Untagged
@@ -5499,23 +5378,6 @@ RectTransform:
   m_AnchoredPosition: {x: -468, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1777116965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777116963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &1777116966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5559,19 +5421,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1777116967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1777116965}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1777116967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6072,7 +5922,6 @@ GameObject:
   - component: {fileID: 1921526740}
   - component: {fileID: 1921526739}
   - component: {fileID: 1921526738}
-  - component: {fileID: 1921526737}
   m_Layer: 0
   m_Name: Image (6)
   m_TagString: Untagged
@@ -6099,23 +5948,6 @@ RectTransform:
   m_AnchoredPosition: {x: -468, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1921526737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921526735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &1921526738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6159,19 +5991,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1921526739}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1921526737}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1921526739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6876,7 +6696,6 @@ GameObject:
   - component: {fileID: 2094402893}
   - component: {fileID: 2094402892}
   - component: {fileID: 2094402891}
-  - component: {fileID: 2094402890}
   m_Layer: 0
   m_Name: Image (2)
   m_TagString: Untagged
@@ -6903,23 +6722,6 @@ RectTransform:
   m_AnchoredPosition: {x: -732, y: 760}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2094402890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094402888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a23487e8eb6004784607e712456ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: 
-  _red: []
-  _blue: []
-  _green: []
-  _yellow: []
 --- !u!114 &2094402891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6963,19 +6765,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2094402892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2094402890}
-        m_TargetAssemblyTypeName: Puzzle5, Assembly-CSharp
-        m_MethodName: CycleColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2094402892
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -44,11 +44,11 @@ public class Puzzle5 : MonoBehaviour
 
         if (_player.GetComponent<WeaponSwap>().activeWeapon == 0)
         {
-            _player.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+            _player.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
         }
         else if (_player.GetComponent<WeaponSwap>().activeWeapon == 1)
         {
-            _player.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
+            _player.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
         }
 
         Destroy(GameObject.Find(_door));
