@@ -65,7 +65,7 @@ public class Shotgun : MonoBehaviour
 
 				bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.up * speed;
 				bullet.GetComponent<PlayerBullet>()._damageVal += _buff;
-				Destroy(bullet, 5);
+				Destroy(bullet, 0.3f);
 				angle -= _spreadAngle;
 			}
 
