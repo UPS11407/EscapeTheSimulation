@@ -16,6 +16,7 @@ public class GreyBoxPlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         _rigid = GetComponent<Rigidbody2D>();
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
