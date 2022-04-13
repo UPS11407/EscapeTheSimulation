@@ -19,7 +19,7 @@ public class Puzzle3 : MonoBehaviour
 
     public void setButton(int button)
     {
-        GameObject.Find("Puzzle3Doors").GetComponent<AudioSource>().Play();
+        GameObject.Find("Puzzle3Sounds").GetComponent<AudioSource>().Play();
 
         var puzzleComp = _controller.GetComponent<Puzzle3>();
         if (button == 1){
