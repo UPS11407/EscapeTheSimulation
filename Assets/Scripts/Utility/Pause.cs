@@ -18,14 +18,32 @@ public class Pause : MonoBehaviour
     {
         _player = GameObject.Find("Player");
     }
+    bool PlayerActive()
+    {
+        if (_player.GetComponent<WeaponSwap>().activeWeapon == 0)
+        {
+            if (_player.transform.GetChild(0).GetChild(0).gameObject.activeInHierarchy)
+            {
+                return true;
+            }
+        }
+        else if (_player.GetComponent<WeaponSwap>().activeWeapon == 1)
+        {
+            if (_player.transform.GetChild(0).GetChild(1).gameObject.activeInHierarchy)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !_pause)
+        if (Input.GetKeyDown(KeyCode.Escape) && !_pause && PlayerActive())
         {
             PauseGame();
         }
-        else if(Input.GetKeyDown(KeyCode.Escape) && _pause)
+        else if(Input.GetKeyDown(KeyCode.Escape) && _pause && PlayerActive())
         {
             UnPause();
         }
